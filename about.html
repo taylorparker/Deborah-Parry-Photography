@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--========== Website Created by Taylor Parker https://github.com/taylorparker ==========-->
+<html lang="en">
+<head>
+  <title>Deb's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <script type="text/javascript" src="js/aos.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/typed.min.js"></script>
+</head>
+<body>
+  <!--========== STARTS THE ON-SCROLL ANIMATION ==========-->
+  <script>
+    AOS.init();
+  </script>
+  <!--========== END THE ON-SCROLL ANIMATION ==========-->
+  <div class="container-fluid no-padding">
+    <!--========== HEADER ==========-->
+    <div class="about">
+      <div class="row">
+        <div class="col-md-12 no-padding">
+          <!--========== MENU ==========-->
+            <ul class="menu" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
+              <h1 class="test">Deborah Parry Photography</h1>
+              <li><a href="gallery.html">Art</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li class="active"><a href="#">About</a></li>
+              <li class="slider"></li>
+            </ul>
+            <!--========== END MENU ==========-->
+
+            <!--========== MOBILE MENU ==========-->
+          <div class="mobile-bar">
+            <h1 class="mobile-logo animated fadeInDown">Deb's Photography</h1>
+            <div class="button_container animated fadeInDown" id="toggle"><h3 class="menu-title">Menu</h3><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+            <div class="overlay" id="overlay">
+    		      <nav class="overlay-menu">
+    		        <ul>
+    		          <li><a href="index.html">Home</a></li>
+    		          <li><a href="gallery.html">Art</a></li>
+    		          <li><a href="#">About</a></li>
+    		        </ul>
+    		      </nav>
+    		    </div>
+          </div>
+          <!--========== END MOBILE MENU ==========-->
+        </div>
+      </div>
+    </div>
+
+    <div class="about-intro">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about-intro-content">
+            <p class="about-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="photo">
+            <img class="img img-responsive" src="http://via.placeholder.com/600x550"></img>
+          </div>
+        </div>
+        <div class="col-md-6 about-drawing">
+          <img class="img img-responsive" src="http://via.placeholder.com/600x820"></img>
+        </div>
+      </div>
+    </div>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="footer-title">Deborah Parry Photography</h3>
+          <div class="social">
+            <a href="https://www.instagram.com/lolwutparry/" target="_blank" class="social-link"><i class="footer-social-element fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--========== END MOBILE FOOTER ==========-->
+
+
+  </div>
+  <script>
+  $('#toggle').click(function() {
+     $(this).toggleClass('active');
+     $('#overlay').toggleClass('open');
+   });
+  </script>
+</body>
+</html>
