@@ -14,6 +14,45 @@ a:hover {
   padding: 0;
 }
 /*------------------------------------------------------------------
+  	[Menu]
+------------------------------------------------------------------*/
+.menu-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.logo-text {
+  padding: 10px;
+  color: #fff;
+  float: left;
+  font-size: 18px;
+}
+.menu-list-holder {
+  float: right;
+}
+.menu-list {
+  list-style: none;
+}
+.menu-element {
+  color: #fff;
+  display: inline-block;
+  height: 50px;
+  font-size: 23px;
+  padding: 8px 0px 0px 0px;
+  text-align: center;
+  width: 200px;
+}
+.menu-element:hover {
+  color: #fff;
+  background-color: #3498db;
+  transition-duration: 0.3s;
+}
+.menu-element:visited {
+  color: #fff;
+}
+/*------------------------------------------------------------------
   	[Header]
 ------------------------------------------------------------------*/
 .header {
@@ -70,6 +109,11 @@ a:hover {
   padding: 25px 48px;
   border-radius: 5px;
   cursor: pointer;
+  transition: all ease-in-out 500ms;
+}
+.button:hover {
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-20px);
 }
 .dive {
   padding-top: 200px;
@@ -126,7 +170,9 @@ a:hover {
 }
 .begin {
   padding-top: 260px;
-  transition: all ease-in-out 300ms;
+  margin: auto;
+  transition: all ease-in-out 500ms;
+  width: 98%;
 }
 .begin:after {
   text-decoration: none;
@@ -256,10 +302,7 @@ a:hover {
   /*------------------------------------------------------------------
     	[MOBILE MENU]
   ------------------------------------------------------------------*/
-  .menu {
-    display: none;
-  }
-  .gallery-menu {
+  .menu-bar {
     display: none;
   }
   .mobile-bar {
@@ -355,12 +398,6 @@ a:hover {
   .overlay.open li:nth-of-type(2) {
     animation-delay: 0.4s;
   }
-  .overlay.open li:nth-of-type(3) {
-    animation-delay: 0.45s;
-  }
-  .overlay.open li:nth-of-type(4) {
-    animation-delay: 0.5s;
-  }
   .overlay nav {
     position: relative;
     height: 70%;
@@ -380,8 +417,7 @@ a:hover {
   }
   .overlay ul li {
     display: block;
-    height: 25%;
-    height: calc(100% / 2);
+    height: 50%;
     min-height: 50px;
     position: relative;
     opacity: 0;
@@ -447,7 +483,7 @@ a:hover {
   /*------------------------------------------------------------------
     	[MOBILE MENU]
   ------------------------------------------------------------------*/
-  .menu {
+  .menu-bar {
     display: none;
   }
   .gallery-menu {
@@ -571,8 +607,7 @@ a:hover {
   }
   .overlay ul li {
     display: block;
-    height: 25%;
-    height: calc(100% / 2);
+    height: 50%;
     min-height: 50px;
     position: relative;
     opacity: 0;
@@ -660,7 +695,7 @@ a:hover {
 /*------------------------------------------------------------------
   	[MOBILE MENU]
 ------------------------------------------------------------------*/
-.menu {
+.menu-bar {
   display: none;
 }
 .button {
@@ -679,14 +714,14 @@ a:hover {
 }
 .mobile-bar {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 50px;
   position: fixed;
   z-index: 1;
 }
 .mobile-gallery-bar {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 50px;
   position: fixed;
   z-index: 1;
@@ -730,6 +765,7 @@ a:hover {
 .button_container span {
   background: #fff;
   border: none;
+  border-radius: 10px;
   height: 5px;
   width: 100%;
   position: absolute;
@@ -795,8 +831,7 @@ a:hover {
 }
 .overlay ul li {
   display: block;
-  height: 25%;
-  height: calc(100% / 2);
+  height: 50%;
   min-height: 50px;
   position: relative;
   opacity: 0;
